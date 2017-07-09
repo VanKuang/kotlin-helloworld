@@ -13,5 +13,14 @@ fun fizzFuzz(start: Int, end: Int) {
 }
 
 fun main(args: Array<String>) {
-    fizzFuzz(1, 10)
+    fizzFuzz(1, 3)
+
+    println("Random Int with Companion Int: " + Int.random())
+
+    println("A" to "B")
+
+    println(("A" to "B").first)
+    println(("A" to "B").second)
+
+    repeat(3, { println("hey!") })
 }
