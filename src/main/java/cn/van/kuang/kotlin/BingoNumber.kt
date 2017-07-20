@@ -1,6 +1,8 @@
+package cn.van.kuang.kotlin
+
 class BingoNumber(val name: String, val age: Int) {
 
-    operator fun compareTo(other: BingoNumber): Int {
+    operator fun compareTo(other: cn.van.kuang.kotlin.BingoNumber): Int {
         return when {
             age < other.age -> -1
             age < other.age -> 1
@@ -9,15 +11,15 @@ class BingoNumber(val name: String, val age: Int) {
     }
 
     override fun toString(): String {
-        return "BingoNumber(name='$name', age=$age)"
+        return "cn.van.kuang.kotlin.BingoNumber(name='$name', age=$age)"
     }
 
 
 }
 
 fun main(args: Array<String>) {
-    val a = BingoNumber("Key to the door", 21)
-    val b = BingoNumber("Jump and Jive", 35)
+    val a = cn.van.kuang.kotlin.BingoNumber("Key to the door", 21)
+    val b = cn.van.kuang.kotlin.BingoNumber("Jump and Jive", 35)
 
     println(a.toString())
     println(b.toString())

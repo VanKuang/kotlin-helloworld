@@ -1,3 +1,5 @@
+package cn.van.kuang.kotlin
+
 fun fizzFuzz(start: Int, end: Int) {
     for (index in start..end) {
         fun isFizz() = index % 3 == 0

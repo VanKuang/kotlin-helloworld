@@ -1,3 +1,5 @@
+package cn.van.kuang.kotlin
+
 fun print(vararg args: String): Unit {
     for (arg in args) {
         println(arg)
@@ -22,4 +24,8 @@ fun main(args: Array<String>) {
     val strings = arrayOf("a", "b", "c")
 
     print("Start", *strings, suffix = "end")
+
+    val str: String? = null
+
+    println(str)
 }

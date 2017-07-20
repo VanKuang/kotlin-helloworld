@@ -1,6 +1,6 @@
-import java.util.*
+package cn.van.kuang.kotlin
 
 fun Int.Companion.random(): Int {
-    val random = Random()
+    val random = java.util.Random()
     return random.nextInt()
 }
